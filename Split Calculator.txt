@@ -1,0 +1,13 @@
+# Create a greeting program
+print("Welcome to the tip calculator!")
+# Ask the input for bill, tip and number of people to split and store it into a variable
+bill = float(input("What was the total bill?\n$"))
+tip = int(input("What percentage tip would you like to give? 10 12 15\n "))
+people = int(input("How many people to split the bill?\n "))
+# As tip is in percentage we will convert using /100
+tip_perc = tip/100
+# Now calculate the total bill by adding bill with tip percentage and dividing it by number of people
+Total = (bill + tip_perc) / people
+# Now round off the calculation using round to 2 digit
+Total_bill = round(Total, 2)
+print(f"Each person must pay: ${Total_bill}")
